@@ -1,19 +1,43 @@
-# 🎈 Blank app template
+# Pokémon Team Coverage Analyzer
 
-A simple Streamlit app template for you to modify!
+Web app para analizar la **cobertura defensiva por tipos** de un equipo Pokémon bajo reglas **Smogon 1v1**, enfocada exclusivamente en **interacciones de tipos**.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+La aplicación permite construir un equipo de hasta 6 Pokémon y evaluar de forma clara:
+- Debilidades
+- Resistencias
+- Inmunidades
+- Riesgo defensivo del equipo frente a cada tipo atacante
 
-### How to run it on your own machine
+---
 
-1. Install the requirements
+## Características principales
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+- Selector de Pokémon con filtro por **generación**
+- Base de datos completa obtenida desde **Pokémon Showdown**  
+  (incluye formas regionales, megas, gmax, etc.)
+- Visualización del equipo con **sprites oficiales de Showdown**
+- Tabla individual de **debilidades y resistencias por Pokémon**
+- Tabla global de **análisis defensivo por tipo atacante**
+  - Conteo de inmunidades, resistencias y debilidades
+  - Detección de debilidades críticas (x4)
+  - Rating defensivo por tipo
 
-2. Run the app
+---
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+
+## Tecnologías utilizadas
+
+- Python 3
+- Streamlit
+- Pandas
+- Requests
+- Sprites y datos de Pokémon Showdown
+
+---
+
+## Ejecución local
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repo.git
+   cd tu-repo
